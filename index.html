@@ -4,28 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    
+    <title>Maquetacion HTML con CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="cabeceraPrincipal">
         <h1>Noticias Ecuador</h1>
-    <section id="logo">
-        <img src="img/alba-logo.png" alt="" width="40" height="30" />
-    </section>
-    <hr />
-    <section id="busqueda" align="Right">
-        <nav>
-            <lu><a href="">Register</a></lu>
-            <lu></lu><a href="">Login</a></lu>
-        </nav>
-        <input type="text" size="15" maxlength="30" value="Buscar..." name="Buscar" />
-    </section>
-    <hr />
+        <section class="logo">
+            <img src="img/alba-logo.png" alt="" width="40" height="30" />
+        </section>
+        <section class="busqueda">
+            <nav class="menuSecundario">
+               Menu Secundario
+            </nav>
+            <aside class="buscador">
+                Buscador
+            </aside>
+        </section>
+
     </header>
-    <section id="menu">
-        <nav>
+
+    <section class="seccionMenu">
+        <nav class="menuPrincipal">
             <ul>
                 <li><a href="">Inicio</a></li>
             </ul>
@@ -43,22 +45,32 @@
             </ul>
         </nav>
     </section>
-    <hr />
+
     <section id="slider" align="Center">
         <img src="img/descarga.jpg" alt="" />
     </section>
+    <main>
+        <section class="noticias">
+            <article>
+                <h4>Noticias 1</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                reprehenderit iure distinctio quidem, minus nobis voluptas voluptates.
+                Laudantium ipsa, impedit deleniti inventore laboriosam nobis
+                repellendus, molestias officia fuga, beatae assumenda?
+            </article>
+        </section>
+        <section class="noticias">
+            <article>
+                <h4>Noticias 2</h4>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                reprehenderit iure distinctio quidem, minus nobis voluptas voluptates.
+                Laudantium ipsa, impedit deleniti inventore laboriosam nobis
+                repellendus, molestias officia fuga, beatae assumenda?
+            </article>
+        </section>
+    </main>
     <hr />
-    <section id="noticias">
-        <article>
-            <h4>Noticias</h4>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-            reprehenderit iure distinctio quidem, minus nobis voluptas voluptates.
-            Laudantium ipsa, impedit deleniti inventore laboriosam nobis
-            repellendus, molestias officia fuga, beatae assumenda?
-        </article>
-    </section>
-    <hr />
-    <section id="sponsors">
+    <section class="sponsors">
         <nav>
             <ul>
                 <li><a href="URL">Sponsor1</a></li>
@@ -68,7 +80,7 @@
         </nav>
     </section>
     <hr />
-    <section align="Center">
+    <section>
         <footer>
             Pie de pagina
         </footer>
