@@ -34,15 +34,16 @@ header.cabeceraPrincipal .busqueda{
     background-color: rgb(181, 209, 150);
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
-.seccionMenu .menuPrincipal{
-    color: cornsilk;
+
+.seccionMenu ul li{
     display: inline-block;
 }
 .seccionMenu .menuPrincipal a{
     color: rgba(20, 5, 19, 0.774);
-    display: inline-block;
 }
-.seccionMenu .menuPrincipal lu{
-    display: inline-block;
+body main .noticias{
+    display: inline;
+    background-color: crimson;
 }
