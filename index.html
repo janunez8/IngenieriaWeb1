@@ -1,82 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maquetacion HTML con CSS</title>
-    <link rel="stylesheet" href="css/styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/6b09d6dc37.js" crossorigin="anonymous"></script>
+    <title>Maquetació en HTML y CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
     <header class="cabeceraPrincipal">
-        <h1>Noticias Ecuador</h1>
-        <section class="logo">
-            <img src="img/alba-logo.png" alt="" width="40" height="30" />
-        </section>
-        <section class="busqueda">
-            <nav class="menuSecundario">
-                Menu Secundario
-            </nav>
+        <div class="logo">
+            <p class="iniciales-logo">
+                IW
+            </p>
+            <h1>Ingeniería web</h1>
+        </div>
+        <section class="seccionCabecera">
             <aside class="buscador">
-                Buscador
+                <div class="barra-busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
             </aside>
         </section>
-
     </header>
-
-    <section class="seccionMenu">
-        <nav class="menuPrincipal">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Servicios</a></li>
-                <li><a href="">Vision y Mision</a></li>
-                <li><a href="">Informacion</a></li>
-                <li><a href="">Contactos</a></li>
-            </ul>
-        </nav>
+    <nav class="menuPrincipal">
+        <a href="#galeria"><i class="fab fa-battle-net"></i> Inicio</a>
+        <a href="#noticias"><i class="fas fa-bell"></i>Noticias</a>
+        <a href="#Sponsors"><i class="fab fa-hubspot"></i>Sponsors</a>
+        <a href=""><i class="fas fa-address-book"></i>Contactos</a>
+        <a href=""><i class="fab fa-asymmetrik"></i>Registrate</a>
+    </nav>
+    <section class="galeriaPrinicpal" id="galeria">
+        <img src="images/imgSlider.jpeg" alt="Imagen 1 del Slider principal">
     </section>
-
-    <section id="slider" align="Center">
-        <img src="img/descarga.jpg" alt="" />
-    </section>
-    <main>
-        <section class="noticias">
-            <article>
-                <h4>Noticias 1</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-                reprehenderit iure distinctio quidem, minus nobis voluptas voluptates.
-                Laudantium ipsa, impedit deleniti inventore laboriosam nobis
-                repellendus, molestias officia fuga, beatae assumenda?
+    <main id="noticias">
+        <h2>Noticias</h2>
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="images/img-01.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Presidente Lenín Moreno asegura que Ecuador experimenta resultados positivos frente a pandemia de COVID-19
+                        </h2>
+                        <p class="fecha">1 de mayo, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        Ecuador está experimentando resultados positivos como la reducción en la velocidad de expansión del virus
+                    </p>
+                    <a href="https://www.eluniverso.com/noticias/2020/05/01/nota/7828860/presidente-moreno-asegura-que-ecuador-experimenta-resultados" class="btn-link" target="_blank">Leer más</a>
+                </div>
             </article>
         </section>
-        <section class="noticias">
-            <article>
-                <h4>Noticias 2</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-                reprehenderit iure distinctio quidem, minus nobis voluptas voluptates.
-                Laudantium ipsa, impedit deleniti inventore laboriosam nobis
-                repellendus, molestias officia fuga, beatae assumenda?
+        <section class="articulo">
+            <article class="noticias">
+                <div class="contenedor1">
+                    <img src="images/img-02.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <div>
+                        <h2 class="titulo">
+                            Kim Jong Un reaparece en Corea del Norte, según agencia de noticias, tras prolongada ausencia y rumores de su muerte
+                        </h2>
+                        <p class="fecha">1 de mayo, 2020</p>
+                    </div>
+                    <p class="extracto">
+                        El líder norcoreano estaba ausente desde el 11 de abril, en los últimos días rondaron rumores de su muerte.
+                    </p>
+                    <a href="https://www.eluniverso.com/noticias/2020/05/01/nota/7829118/kim-jong-corea-norte-reaparece-muerte-agencia" class="btn-link" target="_blank">Leer más</a>
+                </div>
             </article>
         </section>
     </main>
-    <hr />
-    <section class="sponsors">
-        <nav>
-            <ul>
-                <li><a href="URL">Sponsor1</a></li>
-                <li><a href="URL/">Sponsor2</a></li>
-                <li><a href="URL">Sponsor3</a></li>
-            </ul>
-        </nav>
-    </section>
-    <hr />
-    <section>
-        <footer>
-            Pie de pagina
-        </footer>
-    </section>
+    <aside class="sponsor" id="Sponsors">
+        <h2>Sponsors</h2>
+        <section class="sponsorItem">
+            <div class="contenedor-sponsor">
+                <a href="">
+                    <img src="images/sponsor1.png" alt="">
+                </a>
+                <div>
+                    <h2 class="tituloSponsor">Virmex</h2>
+                </div>
+            </div>
+        </section> 
+        <section class="sponsorItem"><div class="contenedor-sponsor">
+                <a href="">
+                    <img src="images/sponsor2.png" alt="">
+                </a>
+                <div>
+                    <h2 class="tituloSponsor">Microsoft</h2>
+                </div>
+            </div></section> 
+        <section class="sponsorItem"><div class="contenedor-sponsor">
+                <a href="">
+                    <img src="images/sponsor3.png" alt="">
+                </a>
+                <div>
+                    <h2 class="tituloSponsor">AMD</h2>
+                </div>
+            </div></section> 
+        <section class="sponsorItem"><div class="contenedor-sponsor">
+                <a href="">
+                    <img src="images/sponsor4.png" alt="">
+                </a>
+                <div>
+                    <h2 class="tituloSponsor">Google</h2>
+                </div>
+            </div></section> 
+    </aside>
+    <footer class="piePagina">
+        <h5>Todos los derechos reservador UTPL 2020</h5>
+    </footer>
 </body>
-
 </html>
