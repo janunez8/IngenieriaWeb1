@@ -1,0 +1,6 @@
+#Serve Alternate Default Index Page
+DirectoryIndex principalIndex.html
+
+ErrorDocument 404 principalIndex.html
+
+
